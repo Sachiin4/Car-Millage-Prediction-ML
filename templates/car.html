@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR MILLAGE</title>
+</head>
+    <body bgcolor=#7FFF00>
+    
+        <h1> MODEL OF CAR MILLAGE IN CITY </h1>
+            <form action="/predict" method="post">
+                <lable>&nbsp; &nbsp;&nbsp;Make &nbsp; &nbsp;&nbsp;: </lable> <select name="html_make">
+                <option value = "Acura">Acura</option>
+                <option value = "Audi">Audi</option>
+                <option value = "BMW">BMW</option>
+                <option value = "Buick">Buick</option>
+                <option value = "Cadillac">Cadillac</option>
+                <option value = "Chevrolet">Chevrolet</option>
+                <option value = "Chrysler">Chrysler</option>
+                <option value = "Dodge">Dodge</option>
+                <option value = "Ford">Ford</option>
+                <option value = "GMC">GMC</option>
+                <option value = "Honda">Honda</option>
+                <option value = "Hummer">Hummer</option>
+                <option value = "Hyundai">Hyundai</option>
+                <option value = "Infiniti">Infiniti</option>
+                <option value = "Isuzu">Isuzu</option>
+                <option value = "Jaguar">Jaguar</option>
+                <option value = "Jeep">Jeep</option>
+                <option value = "Kia">Kia</option>
+                <option value = "Land_Rover">Land_Rover</option>
+                <option value = "Lexus">Lexus</option>
+                <option value = "Lincoln">Lincoln</option>
+                <option value = "MINI">MINI</option>
+                <option value = "Mazda">Mazda</option>
+                <option value = "Mercedes_Benz">Mercedes_Benz</option>
+                <option value = "Mercury">Mercury</option>
+                <option value = "Mitsubishi">Mitsubishi</option>
+                <option value = "Nissan">Nissan</option>
+                <option value = "Oldsmobile">Oldsmobile</option>
+                <option value = "Pontiac">Pontiac</option>
+                <option value = "Porsche">Porsche</option>
+                <option value = "Saab">Saab</option>
+                <option value = "Saturn">Saturn</option>
+                <option value = "Scion">Scion</option>
+                <option value = "Subaru">Subaru</option>
+                <option value = "Suzuki">Suzuki</option>
+                <option value = "Toyota">Toyota</option>
+                <option value = "Volkswagen">Volkswagen</option>
+                <option value = "Volvo">Volvo</option>
+
+                </select>
+                <br><br>
+                <lable>&nbsp; &nbsp;&nbsp;Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </lable> <select name="html_type">
+                    <option value = "1">SUV</option>
+                    <option value = "2">Sedan</option>
+                    <option value = "3">Sports</option>
+                    <option value = "4">Wagon</option>
+                    <option value = "5">Truck</option>
+                    <option value = "6">Hybrid</option>
+                    </select>
+                    <br><br>
+                    <lable>&nbsp; &nbsp;Origin&nbsp; &nbsp;&nbsp;: </lable> <select name="html_origin">
+                        <option value = "1">ASIA</option>
+                        <option value = "2">EUROPE</option>
+                        <option value = "3">USA</option>
+                        </select>
+                        <br><br>
+                        <lable>Drivetrain&nbsp;: </lable> <select name="html_drive">
+                            <option value = "1">All</option>
+                            <option value = "2">FRONT</option>
+                            <option value = "3">REAR</option>
+                            </select>
+                            <br><br>
+                            <lable>&nbsp;&nbsp;MSRP&nbsp; &nbsp;&nbsp;&nbsp;: </lable> <input type="number" name="html_msrp"><br><br>
+                            <lable>&nbsp; Invoice &nbsp;&nbsp;&nbsp;&nbsp;: </lable> <input type="number" name="html_invoice"><br><br>
+                            <lable>EngineSize : </lable> <input type="number" step="any" name="html_esize"><br><br>
+                            <lable>Cylinders&nbsp; &nbsp;: </lable> <input type="number" name="html_cyl"><br><br>
+                            <lable>Horsepower: </lable> <input type="number" name="html_hpower"><br><br>
+                            <lable>MPG_Highway: </lable> <input type="number" name="html_mpgh"><br><br>
+                            <lable>&nbsp; &nbsp;&nbsp;&nbsp;Weight&nbsp; &nbsp;&nbsp;&nbsp;: </lable> <input type="number" name="html_weight"><br><br>
+                            <lable>Wheelbase&nbsp; &nbsp;: </lable> <input type="number" name="html_whbase"><br><br>
+                            <lable>&nbsp; &nbsp;&nbsp;&nbsp;Length&nbsp; &nbsp;&nbsp;&nbsp;: </lable> <input type="number" name="html_length"><br><br>
+                            
+                            
+                            <input type= "submit" value="check_millage">
+
+                            <h2>{{PREDICT_MILLAGE}}</h2>
+                         
+            
+
+
+        </form>
+
+
+
+    </body>
+
+
+</html>

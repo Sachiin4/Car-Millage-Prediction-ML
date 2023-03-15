@@ -1,0 +1,1 @@
+{"Type": {"SUV": 1, "Sedan": 2, "Sports": 3, "Wagon": 4, "Truck": 5, "Hybrid": 6}, "Origin": {"Asia": 1, "Europe": 2, "USA": 3}, "DriveTrain": {"All": 1, "Front": 2, "Rear": 3}}
