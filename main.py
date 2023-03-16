@@ -17,5 +17,5 @@ def predict_price():
     return (predicted_millage)
 
 if __name__=="__main__":
-    app.run(host=CONFIG.HOST_NAME, port= CONFIG.PORT_NUMBER)
+    app.run(host=CONFIG.HOST_NAME, port=CONFIG.PORT_NUMBER)
     
